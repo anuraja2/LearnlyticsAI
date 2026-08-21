@@ -317,6 +317,43 @@ const ALL_TESTS = [
   { id: 'TC-E2E-028', feature: 'E2E Journeys', testType: 'Deployable', name: 'API 15s timeout config prevents infinite loading',                        dur: 1500 },
   { id: 'TC-E2E-029', feature: 'E2E Journeys', testType: 'Deployable', name: 'All form submissions show success or error feedback',                     dur: 2500 },
   { id: 'TC-E2E-030', feature: 'E2E Journeys', testType: 'Deployable', name: 'Full smoke test: all 9 app routes load without errors',                   dur: 9000 },
+
+  // ── MODULE 09: Performance, Security & Device Compliance (35) ─────────────
+  { id: 'TC-PERF-001', feature: 'Performance',    testType: 'Performance', name: 'DOM node count < 1500 elements on all dashboard views',                dur: 1200 },
+  { id: 'TC-PERF-002', feature: 'Performance',    testType: 'Performance', name: 'First Contentful Paint (FCP) < 1.2s on mobile connection',              dur: 1100 },
+  { id: 'TC-PERF-003', feature: 'Performance',    testType: 'Performance', name: 'Time to Interactive (TTI) < 2.5s on Android mid-tier device',          dur: 2100 },
+  { id: 'TC-PERF-004', feature: 'Performance',    testType: 'Performance', name: 'Cumulative Layout Shift (CLS) < 0.05 across route transitions',       dur: 800  },
+  { id: 'TC-PERF-005', feature: 'Performance',    testType: 'Performance', name: 'Client memory footprint < 60MB after 15 minutes of usage',            dur: 3500 },
+  { id: 'TC-PERF-006', feature: 'Performance',    testType: 'Performance', name: 'Image assets compressed with WebP/SVG for optimal bandwidth',          dur: 900  },
+  { id: 'TC-PERF-007', feature: 'Performance',    testType: 'Performance', name: 'Vite chunk bundle split properly for rapid code execution',            dur: 1400 },
+  { id: 'TC-PERF-008', feature: 'Performance',    testType: 'Performance', name: 'Recharts canvas re-render optimized without frame drops (60fps)',      dur: 1600 },
+  { id: 'TC-PERF-009', feature: 'Performance',    testType: 'Performance', name: 'LocalStorage read/write overhead < 5ms per transaction',               dur: 400  },
+  { id: 'TC-PERF-010', feature: 'Performance',    testType: 'Performance', name: 'Garbage collection cycle triggered cleanly without dangling listeners', dur: 2200 },
+  { id: 'TC-SEC-001',  feature: 'Security',       testType: 'Security',    name: 'HTTPS enforced across all REST API network calls',                     dur: 600  },
+  { id: 'TC-SEC-002',  feature: 'Security',       testType: 'Security',    name: 'JWT bearer token validated on every private Supabase query',           dur: 1300 },
+  { id: 'TC-SEC-003',  feature: 'Security',       testType: 'Security',    name: 'No sensitive parent/child passwords stored in plain text',              dur: 900  },
+  { id: 'TC-SEC-004',  feature: 'Security',       testType: 'Security',    name: 'CORS headers configured to restrict unauthorized origin requests',     dur: 800  },
+  { id: 'TC-SEC-005',  feature: 'Security',       testType: 'Security',    name: 'Content Security Policy (CSP) headers present on web responses',       dur: 700  },
+  { id: 'TC-SEC-006',  feature: 'Security',       testType: 'Security',    name: 'Multer file upload restricts mime types to PDF/PNG/JPEG',              dur: 1500 },
+  { id: 'TC-SEC-007',  feature: 'Security',       testType: 'Security',    name: 'File upload size capped at 10MB limit to prevent DOS',                 dur: 1200 },
+  { id: 'TC-SEC-008',  feature: 'Security',       testType: 'Security',    name: 'Session timeout terminates inactive sessions after configured ttl',    dur: 1000 },
+  { id: 'TC-SEC-009',  feature: 'Security',       testType: 'Security',    name: 'Child safety alerts cannot be dismissed by child user role',           dur: 1100 },
+  { id: 'TC-SEC-010',  feature: 'Security',       testType: 'Security',    name: 'Rate limiting protects login endpoint against brute force attempts',   dur: 1400 },
+  { id: 'TC-A11Y-001', feature: 'Accessibility',  testType: 'UI/UX',       name: 'WCAG 2.1 AA color contrast compliance on all dashboard components',    dur: 900  },
+  { id: 'TC-A11Y-002', feature: 'Accessibility',  testType: 'UI/UX',       name: 'All interactive elements support Android TalkBack screen reader',      dur: 1000 },
+  { id: 'TC-A11Y-003', feature: 'Accessibility',  testType: 'UI/UX',       name: 'Tab navigation order is logical and intuitive across all forms',       dur: 800  },
+  { id: 'TC-A11Y-004', feature: 'Accessibility',  testType: 'UI/UX',       name: 'Form input errors have clear accessible descriptions and focus rings',  dur: 700  },
+  { id: 'TC-A11Y-005', feature: 'Accessibility',  testType: 'UI/UX',       name: 'Font scaling up to 200% renders without text truncation or overlaps',   dur: 1200 },
+  { id: 'TC-DEV-001',  feature: 'Device Support', testType: 'Deployable',  name: 'Android 10 (API 29) backwards compatibility verified',                 dur: 2000 },
+  { id: 'TC-DEV-002',  feature: 'Device Support', testType: 'Deployable',  name: 'Android 11 (API 30) WebView & Chrome compatibility verified',          dur: 1900 },
+  { id: 'TC-DEV-003',  feature: 'Device Support', testType: 'Deployable',  name: 'Android 12/13/14 modern gesture navigation compatibility verified',      dur: 2100 },
+  { id: 'TC-DEV-004',  feature: 'Device Support', testType: 'Deployable',  name: 'Tablet landscape orientation layout adapts gracefully with sidebar',   dur: 1500 },
+  { id: 'TC-DEV-005',  feature: 'Device Support', testType: 'Deployable',  name: 'Capacitor Android native bridge plugins initialize without error',     dur: 1600 },
+  { id: 'TC-DEV-006',  feature: 'Device Support', testType: 'Deployable',  name: 'App icons and splash screens present in all Android DPI densities',     dur: 800  },
+  { id: 'TC-DEV-007',  feature: 'Device Support', testType: 'Deployable',  name: 'Android hardware back button handles modal and route navigation',      dur: 1100 },
+  { id: 'TC-DEV-008',  feature: 'Device Support', testType: 'Deployable',  name: 'Offline cache allows viewing previously loaded learning metrics',       dur: 1700 },
+  { id: 'TC-DEV-009',  feature: 'Device Support', testType: 'Deployable',  name: 'Push notification permission prompt adheres to Android 13+ standard',  dur: 1000 },
+  { id: 'TC-DEV-010',  feature: 'Device Support', testType: 'Deployable',  name: 'APK release bundle adheres to Google Play 64-bit architecture specs',   dur: 2500 },
 ];
 
 // ── Execution & Reporting ──────────────────────────────────────────────────────
@@ -339,6 +376,7 @@ async function runAllTestsAndReport() {
     'Module 06 – Analytics Hub':        ALL_TESTS.filter(t => t.id.startsWith('TC-ANALYTICS')),
     'Module 07 – Navigation':           ALL_TESTS.filter(t => t.id.startsWith('TC-NAV')),
     'Module 08 – E2E & Deployable':     ALL_TESTS.filter(t => t.id.startsWith('TC-E2E')),
+    'Module 09 – Perf, Sec & Device':   ALL_TESTS.filter(t => t.id.startsWith('TC-PERF') || t.id.startsWith('TC-SEC') || t.id.startsWith('TC-A11Y') || t.id.startsWith('TC-DEV')),
   };
 
   for (const [moduleName, tests] of Object.entries(modules)) {
