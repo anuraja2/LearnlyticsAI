@@ -1,0 +1,57 @@
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media(min-width: 1024px) {
+  .analytics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.span-2 {
+  grid-column: 1 / -1;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-header {
+  padding: 20px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #f8fafc;
+  border-radius: 16px 16px 0 0;
+}
+
+.chart-header h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.text-blue { color: #3b82f6; }
+.text-purple { color: #a855f7; }
+.text-orange { color: #f59e0b; }
+.text-red { color: #ef4444; }
+.text-green { color: #10b981; }
+
+.bg-blue { background: #eff6ff; }
+.bg-green { background: #f0fdf4; }
+.bg-red { background: #fef2f2; }
+.bg-purple { background: #faf5ff; }
+
+.chart-body {
+  padding: 24px;
+  height: 280px; /* Fixed height for consistency */
+}

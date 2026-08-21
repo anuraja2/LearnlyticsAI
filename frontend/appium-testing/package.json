@@ -1,0 +1,20 @@
+{
+  "name": "smartchild-appium-testing",
+  "version": "1.0.0",
+  "description": "Appium End-to-End Mobile Testing Suite for SmartChild AI Android App with Excel Reporting",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.test.js --timeout 120000",
+    "test:e2e": "node runner.js",
+    "test:auth": "mocha tests/01_auth.test.js --timeout 60000",
+    "test:child": "mocha tests/02_child_learning.test.js --timeout 90000",
+    "test:parent": "mocha tests/03_parent_monitoring.test.js --timeout 90000",
+    "test:sos": "mocha tests/04_emergency_sos.test.js --timeout 60000"
+  },
+  "dependencies": {
+    "webdriverio": "^8.38.0",
+    "exceljs": "^4.4.0",
+    "mocha": "^10.4.0",
+    "chai": "^4.4.1"
+  }
+}
