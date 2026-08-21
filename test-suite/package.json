@@ -1,0 +1,14 @@
+{
+  "name": "unified-test-suite",
+  "version": "1.0.0",
+  "description": "Unified orchestration suite for Appium, Selenium, Load, and Security tests",
+  "main": "runner.js",
+  "scripts": {
+    "test": "node runner.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
